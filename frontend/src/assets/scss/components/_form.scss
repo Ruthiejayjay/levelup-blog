@@ -1,0 +1,40 @@
+.form__inputWrapper {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form__text {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form__error {
+    background: #760d0d;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.form__inputError {
+    color: #760d0d;
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+.form__input--hasError {
+    border: 1px solid #760d0d;
+}

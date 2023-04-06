@@ -1,0 +1,159 @@
+.articleCard {
+    position: relative;
+    background: $white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 300ms;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 0px rgba(gray, 0.15);
+    }
+}
+
+.articleCard__imagebox {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 90%;
+        z-index: 1;
+    }
+
+    &:hover {
+        .articleCard__image {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.articleCard__button {
+    border: dashed 2px #DDDDDD;
+}
+
+.articleCard__imagebox--top {
+    display: flex;
+}
+
+.article__imagebox--edit-link {
+    z-index: 12;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+}
+
+.articleCard__imagebox-link {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(black, 0.4);
+        z-index: 3;
+    }
+}
+
+.articleCard__imagebox--button {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.articleCard__imagebox--button-img {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.articleCard__imagebox--button-text {
+    text-decoration: none;
+    color: black;
+}
+
+.articleCard__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: transform 400ms;
+}
+
+.articleCard__content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.articleCard__content-text {
+    color: $mainColor;
+    font-family: $lora;
+    border-bottom: 1px solid $snow;
+}
+
+.articleCard__content-time {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.articleCard__content-title {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.articleCard__content-title-link {
+    color: $mainColor;
+    transition: color 200ms;
+    text-decoration: none;
+
+    &:hover {
+        color: $beige;
+    }
+}
+
+.articleCard__content-desc {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.articleCard__content-text--related {
+    color: $snow;
+    border-bottom: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    z-index: 5;
+
+    @include for-tablet-down {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+.articleCard__content-title-link--related {
+    color: white;
+}
+
+.article__content-author {
+    margin-top: 20px;
+}
+
+.article__selector {
+    margin-top: 20px;
+}

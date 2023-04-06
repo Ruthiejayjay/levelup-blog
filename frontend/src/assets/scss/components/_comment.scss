@@ -1,0 +1,76 @@
+.article__comment {
+    height: 700px;
+    overflow: auto;
+}
+
+.comments {
+    border-top: 0.5px solid #E5E5E5;
+    padding-top: 20px;
+    font-family: $lora;
+    color: $mainColor;
+}
+
+.comments__form {
+    background-color: #E7E7E7;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.comments__contents-input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.input {
+    border: 1px solid #E7E7E7;
+    border-radius: 25px;
+    width: 1000%;
+    padding: 15px 5px;
+
+    &:focus {
+        box-shadow: 0px 0px 10px 0px rgba($beige, 0.15);
+    }
+}
+
+.btn__comment {
+    border-radius: 15px;
+    background-color: $beige;
+    border: 1px solid $beige;
+    color: $white;
+    padding: 5px 10px;
+    position: absolute;
+    left: 90%;
+}
+
+.comments__contents {
+    background-color: #E7E7E7;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 10px;
+}
+
+.comments__contents-img {
+    border-radius: 50px;
+    width: 50px;
+}
+
+.comments__contents-content {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.comments__contents-para {
+    line-height: 0.8;
+}

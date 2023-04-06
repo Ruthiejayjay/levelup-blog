@@ -1,0 +1,68 @@
+.footer__upper {
+    background: #212529;
+}
+
+.footer__bottom {
+    background: #343A40;
+}
+
+.footer__inner {
+    @include container;
+}
+
+.footer__inner--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 30px;
+        padding-top: 30px;
+    }
+
+
+}
+
+.footer__section-list {
+    @include reset;
+    list-style: none;
+}
+
+.footer__bottom-text {
+    @include reset;
+    color: #ffff;
+}
+
+.footer__section-title {
+    font-family: $lora;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+}
+
+.footer__section-link {
+    font-family: $lora;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E5E5E5;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+.footer__inner--bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 15px;
+    font-family: $lora;
+    font-size: 14px;
+    line-height: 18px;
+}

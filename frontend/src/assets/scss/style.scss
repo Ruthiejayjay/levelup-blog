@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap');
+
+@import 'scss-utils/normalize';
+@import 'scss-utils/mixins';
+@import 'scss-utils/variables';
+
+@import 'base/general';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/categoriesList';
+@import 'components/mainArticle';
+@import 'components/related';
+@import 'components/article';
+@import 'components/blog.scss';
+@import 'components/modal';
+@import 'components/form';
+@import 'components/button';
+@import 'components/profile';
+@import 'components/comment';
+@import 'components/reactions';
+
+@import 'pages/home.scss';
+@import 'pages/about.scss';
